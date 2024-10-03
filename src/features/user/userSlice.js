@@ -9,6 +9,7 @@ const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers:{
+    //action:(unique identifier and payload )
     setUserLoginDetails:(state, action)=>{
       state.name = action.payload.name;
       state.email= action.payload.email;
